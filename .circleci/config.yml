@@ -20,8 +20,6 @@ jobs:
     working_directory: ~/zbackup
     steps:
       - checkout
-      - run: echo $PATH
-      - run: uname -r
       - run: ./bin/zbackup dev/lint dev/test build
 workflows:
   version: 2
