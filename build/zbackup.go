@@ -10,7 +10,7 @@ import (
 )
 
 func buildApp(ctx context.Context) error {
-	return buildgo.GoBuildPkg(ctx, "cmd", "bin/zbackup-app", false)
+	return buildgo.GoBuildPkg(ctx, "cmd", "bin/zbackup-app", true)
 }
 
 func runApp(ctx context.Context, deps build.DepsFunc) error {
