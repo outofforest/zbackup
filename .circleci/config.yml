@@ -21,7 +21,7 @@ jobs:
     steps:
       - checkout
       - run: echo $PATH
-      - run: find / -name "go"
+      - run: uname -r
       - run: ./bin/zbackup dev/lint dev/test build
 workflows:
   version: 2
