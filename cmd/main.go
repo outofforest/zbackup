@@ -1,6 +1,7 @@
 package main
 
 import (
+	// nolint
 	"crypto"
 	"crypto/rand"
 	"errors"
