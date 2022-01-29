@@ -7,8 +7,8 @@ import (
 
 	"github.com/outofforest/build"
 	"github.com/outofforest/ioc/v2"
-	me "github.com/outofforest/osman/build"
 	"github.com/outofforest/run"
+	me "github.com/outofforest/zbackup/build"
 	"github.com/ridge/must"
 )
 
