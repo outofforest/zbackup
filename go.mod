@@ -14,6 +14,7 @@ require (
 	github.com/outofforest/run v0.2.2
 	github.com/ridge/must v0.6.0
 	github.com/ridge/parallel v0.1.1
+	github.com/stretchr/testify v1.7.1 // indirect
 	golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27 // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
 )

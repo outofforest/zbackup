@@ -20,7 +20,7 @@ func main() {
 		}
 
 		changeWorkingDir()
-		return build.Do(ctx, "Digest", exec)
+		return build.Do(ctx, "ZBackup", exec)
 	})
 }
 
