@@ -11,7 +11,7 @@ require (
 	github.com/outofforest/ioc/v2 v2.5.0
 	github.com/outofforest/libexec v0.2.1
 	github.com/outofforest/run v0.2.2
-	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
+	golang.org/x/term v0.0.0-20220411215600-e5f449aeb171
 )
 
 require (
@@ -21,5 +21,5 @@ require (
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
 	go.uber.org/zap v1.21.0 // indirect
-	golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27 // indirect
+	golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1 // indirect
 )
