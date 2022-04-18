@@ -1,6 +1,6 @@
 module github.com/outofforest/zbackup
 
-go 1.16
+go 1.18
 
 replace github.com/ridge/parallel => github.com/outofforest/parallel v0.1.2
 
