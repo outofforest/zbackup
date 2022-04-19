@@ -14,7 +14,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Install libpcsclite-dev
-        run: apt install libpcsclite-dev
+        run: sudo apt install libpcsclite-dev
       - name: CI
         run: |
           cd ./build
