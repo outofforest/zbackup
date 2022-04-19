@@ -68,7 +68,7 @@ linters:
     - gomoddirectives
     - cyclop
     - ireturn
-    - typecheck
+    - nilnil
 
 linters-settings:
   nakedret:

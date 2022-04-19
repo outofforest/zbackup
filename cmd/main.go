@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"crypto"
 	"crypto/rand"
 	"errors"
@@ -11,6 +12,7 @@ import (
 
 	"github.com/go-piv/piv-go/piv"
 	"github.com/outofforest/run"
+	"github.com/outofforest/zbackup"
 	"golang.org/x/term"
 )
 
@@ -19,13 +21,12 @@ const zfsKeyFile = "/usr/share/zfs-tools/zfs-pass.yubi"
 var yubiSlot = piv.SlotAuthentication
 
 func main() {
-	run.Tool("zbackup", nil, func() error {
-		pass, err := decryptPassword()
+	run.Tool("zbackup", nil, func(ctx context.Context) error {
+		password, err := decryptPassword()
 		if err != nil {
 			return err
 		}
-		fmt.Println(pass)
-		return nil
+		return zbackup.Backup(ctx, password)
 	})
 }
 
