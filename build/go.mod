@@ -10,5 +10,4 @@ require (
 	github.com/outofforest/ioc/v2 v2.5.0
 	github.com/outofforest/libexec v0.2.1
 	github.com/outofforest/run v0.2.2
-	github.com/outofforest/zbackup v0.0.0-20220129115021-3077c8c6e9bb
 )

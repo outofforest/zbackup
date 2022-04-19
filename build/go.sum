@@ -24,8 +24,6 @@ github.com/outofforest/parallel v0.1.2 h1:alKV5c/WzdhVohQUyAWoYyi2Nigv4q1oBMW7Qj
 github.com/outofforest/parallel v0.1.2/go.mod h1:RuwcKVeJYrUFcmydQtOAw8S9zE8p9UhrEjsGMYl5sfU=
 github.com/outofforest/run v0.2.2 h1:a84c9s0D8QdEV9OApkGCVnX1VI1/kEeyWR3kz8uuObc=
 github.com/outofforest/run v0.2.2/go.mod h1:CapAHpAgB/Cb2PtJVaYvpciJFIkxMJhWZ4A0yzFFMbc=
-github.com/outofforest/zbackup v0.0.0-20220129115021-3077c8c6e9bb h1:Spph/oYXCm2OwUpIAqPdt7vWv8wOkEU8lfxRg1mHJac=
-github.com/outofforest/zbackup v0.0.0-20220129115021-3077c8c6e9bb/go.mod h1:uO/tdSnZ97pZGrVPQxWEd7+uc8K32LUslASzYO8Lgx0=
 github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

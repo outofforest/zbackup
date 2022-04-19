@@ -7,7 +7,7 @@ import (
 	"github.com/outofforest/ioc/v2"
 	"github.com/outofforest/run"
 
-	me "github.com/outofforest/zbackup/build"
+	me "build"
 )
 
 func main() {
