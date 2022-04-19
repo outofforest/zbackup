@@ -26,6 +26,7 @@ const (
 	suffixLastTime     = "last:time"
 )
 
+// Backup backups ZFS filesystems
 func Backup(ctx context.Context, password string) error {
 	pool, err := zfs.ImportPool(ctx, backupPool)
 	if err != nil {
