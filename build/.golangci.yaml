@@ -69,6 +69,7 @@ linters:
     - cyclop
     - ireturn
     - nilnil
+    - maintidx
 
 linters-settings:
   nakedret:
