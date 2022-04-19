@@ -17,4 +17,4 @@ jobs:
         run: |
           cd ./build
           go build -o ../bin/tmp-build ./cmd
-          ../bin/tmp-build dev/lint build
+          ../bin/tmp-build build
