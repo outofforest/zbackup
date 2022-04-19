@@ -6,7 +6,7 @@ replace github.com/ridge/parallel => github.com/outofforest/parallel v0.1.2
 
 require (
 	github.com/go-piv/piv-go v1.9.0
-	github.com/outofforest/go-zfs/v3 v3.1.4
+	github.com/outofforest/go-zfs/v3 v3.1.5
 	github.com/outofforest/run v0.2.2
 	github.com/ridge/parallel v0.1.1
 	github.com/stretchr/testify v1.7.1
