@@ -10,8 +10,8 @@ github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORN
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
-github.com/outofforest/go-zfs/v3 v3.1.5 h1:IOoMOgf7AIBcH4zwxSlMtZ0y93C+HxvCfltDXunKqOo=
-github.com/outofforest/go-zfs/v3 v3.1.5/go.mod h1:EEbYceqfxe3/9XmdsrTfSegXfQed3QaMqRQ+vx7yjuE=
+github.com/outofforest/go-zfs/v3 v3.1.6 h1:fHuwLxgo2/M/cxME7Zk4Izu0IDzCOAxJaEKvX6FJasE=
+github.com/outofforest/go-zfs/v3 v3.1.6/go.mod h1:EEbYceqfxe3/9XmdsrTfSegXfQed3QaMqRQ+vx7yjuE=
 github.com/outofforest/ioc/v2 v2.5.0 h1:adaOwJrk8IzlauIfe41SG7PNHK23dBQhrpAR5ho7m3E=
 github.com/outofforest/ioc/v2 v2.5.0/go.mod h1:7dAov+lZ7RbJ2TCy/IiK6+bicPmWZspga0P+exKudNE=
 github.com/outofforest/libexec v0.2.1 h1:x1Cfk88do1teCrgNxOotjWBpLGMtvmInNsvsJpP/P44=
