@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/go-piv/piv-go v1.9.0
-	github.com/outofforest/go-zfs/v3 v3.1.8
+	github.com/outofforest/go-zfs/v3 v3.1.9
 	github.com/outofforest/parallel v0.2.0
 	github.com/outofforest/run v0.2.3
 	github.com/stretchr/testify v1.7.1
