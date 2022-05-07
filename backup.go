@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/outofforest/go-zfs/v3"
-	"github.com/ridge/parallel"
+	"github.com/outofforest/parallel"
 )
 
 const (
