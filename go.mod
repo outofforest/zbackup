@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/go-piv/piv-go v1.9.0
-	github.com/outofforest/go-zfs/v3 v3.1.9
+	github.com/outofforest/go-zfs/v3 v3.1.10
 	github.com/outofforest/parallel v0.2.0
 	github.com/outofforest/run v0.2.3
 	github.com/stretchr/testify v1.7.1
@@ -14,7 +14,7 @@ require (
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/outofforest/ioc/v2 v2.5.0 // indirect
-	github.com/outofforest/libexec v0.2.2 // indirect
+	github.com/outofforest/libexec v0.3.0 // indirect
 	github.com/outofforest/logger v0.2.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
