@@ -4,7 +4,6 @@ import (
 	"context"
 	"crypto"
 	"crypto/rand"
-	"errors"
 	"fmt"
 	"io/ioutil"
 	"strings"
@@ -12,8 +11,10 @@ import (
 
 	"github.com/go-piv/piv-go/piv"
 	"github.com/outofforest/run"
-	"github.com/outofforest/zbackup"
+	"github.com/pkg/errors"
 	"golang.org/x/term"
+
+	"github.com/outofforest/zbackup"
 )
 
 const zfsKeyFile = "/usr/share/zfs-tools/zfs-pass.yubi"
@@ -33,7 +34,7 @@ func main() {
 func decryptPassword() (string, error) {
 	cards, err := piv.Cards()
 	if err != nil {
-		return "", fmt.Errorf("fetching YubiKey devices failed: %w", err)
+		return "", errors.WithStack(fmt.Errorf("fetching YubiKey devices failed: %w", err))
 	}
 	for _, ykCard := range cards {
 		// inline function to close yubikey device immediately
@@ -44,28 +45,28 @@ func decryptPassword() (string, error) {
 
 			yk, err := piv.Open(ykCard)
 			if err != nil {
-				return "", fmt.Errorf("opening YubiKey device failed: %w", err)
+				return "", errors.WithStack(fmt.Errorf("opening YubiKey device failed: %w", err))
 			}
 			defer func() {
 				if err := yk.Close(); err != nil && retErr == nil {
-					retErr = fmt.Errorf("closing YubiKey device failed: %w", err)
+					retErr = errors.WithStack(fmt.Errorf("closing YubiKey device failed: %w", err))
 				}
 			}()
 
 			cert, err := yk.Certificate(yubiSlot)
 			if err != nil {
-				return "", fmt.Errorf("fetching certificate failed: %w", err)
+				return "", errors.WithStack(fmt.Errorf("fetching certificate failed: %w", err))
 			}
 
 			fmt.Printf("Hello %s, provide your YubiKey PIN:\n", cert.Subject.CommonName)
 
 			pin, err := term.ReadPassword(syscall.Stdin)
 			if err != nil {
-				return "", fmt.Errorf("reading pin failed: %w", err)
+				return "", errors.WithStack(fmt.Errorf("reading pin failed: %w", err))
 			}
 			pk, err := yk.PrivateKey(yubiSlot, cert.PublicKey, piv.KeyAuth{PIN: string(pin), PINPolicy: piv.PINPolicyAlways})
 			if err != nil {
-				return "", fmt.Errorf("fetching private key failed: %w", err)
+				return "", errors.WithStack(fmt.Errorf("fetching private key failed: %w", err))
 			}
 
 			privKey, ok := pk.(crypto.Decrypter)
@@ -75,11 +76,11 @@ func decryptPassword() (string, error) {
 
 			passEncrypted, err := ioutil.ReadFile(zfsKeyFile)
 			if err != nil {
-				return "", fmt.Errorf("reading encrypted password failed: %w", err)
+				return "", errors.WithStack(fmt.Errorf("reading encrypted password failed: %w", err))
 			}
 			passDecrypted, err := privKey.Decrypt(rand.Reader, passEncrypted, nil)
 			if err != nil {
-				return "", fmt.Errorf("decryption failed: %w", err)
+				return "", errors.WithStack(fmt.Errorf("decryption failed: %w", err))
 			}
 			return string(passDecrypted), nil
 		}()

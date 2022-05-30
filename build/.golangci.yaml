@@ -70,6 +70,8 @@ linters:
     - ireturn
     - nilnil
     - maintidx
+    - exhaustruct
+    - nonamedreturns
 
 linters-settings:
   nakedret:
