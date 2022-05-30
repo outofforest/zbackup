@@ -10,6 +10,7 @@ import (
 
 	"github.com/outofforest/go-zfs/v3"
 	"github.com/outofforest/parallel"
+	"github.com/pkg/errors"
 )
 
 const (
@@ -48,7 +49,7 @@ func Backup(ctx context.Context, password string) error {
 		return err
 	}
 	if backupPoolID == "" {
-		return fmt.Errorf("pool name not set for backup pool: %s", backupPool)
+		return errors.Errorf("pool name not set for backup pool: %s", backupPool)
 	}
 	backupPoolID = strings.ToLower(backupPoolID)
 
