@@ -6,10 +6,12 @@ import (
 	"crypto/rand"
 	"fmt"
 	"io/ioutil"
+	"os"
 	"strings"
 	"syscall"
 
 	"github.com/go-piv/piv-go/piv"
+	"github.com/outofforest/logger"
 	"github.com/outofforest/run"
 	"github.com/pkg/errors"
 	"golang.org/x/term"
@@ -23,6 +25,9 @@ var yubiSlot = piv.SlotAuthentication
 
 func main() {
 	run.Tool("zbackup", nil, func(ctx context.Context) error {
+		if err := logger.Flags(logger.ToolDefaultConfig, "zbackup").Parse(os.Args[1:]); err != nil {
+			return err
+		}
 		password, err := decryptPassword()
 		if err != nil {
 			return err
