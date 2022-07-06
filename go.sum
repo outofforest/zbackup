@@ -19,8 +19,9 @@ github.com/outofforest/libexec v0.3.1/go.mod h1:gtoGwYltgbr4xdDPaOK2drncIHZMRG8J
 github.com/outofforest/logger v0.3.1/go.mod h1:09lY6eHvNz/tuXC7ADw2Oy4FxNevW2C+NBShMlSuRhA=
 github.com/outofforest/logger v0.3.2 h1:TJuq2YRjcLdYILRt3eLqDPDiAQIXQEMsHd7KkmThfdg=
 github.com/outofforest/logger v0.3.2/go.mod h1:7tZq4O4iqXtj1yhFTt2i2JdXVOG1Oav79Kp1aYDvf8M=
-github.com/outofforest/parallel v0.2.1 h1:ASnhcrWsicg3Oa4rsRAVLqasVva5047dER81Il1gW1s=
 github.com/outofforest/parallel v0.2.1/go.mod h1:D+bcz/EGZUHfkxqCLeHa61nj693l/ZT3NrKBcI9C3us=
+github.com/outofforest/parallel v0.2.2 h1:mXoLGbqTI7d12zvLvd2lrZCIDuu6iTNdsuCz9VjRXAQ=
+github.com/outofforest/parallel v0.2.2/go.mod h1:VRGOljH7uGPTlxRqe0hnNujqMjrxsJ3MlZon8n6TA9M=
 github.com/outofforest/run v0.2.9 h1:4E0CC43C3rPhzSi7GRNHzls8L1aBWRtoz+95z7+WRH0=
 github.com/outofforest/run v0.2.9/go.mod h1:CtKExOjc/zv4fTL9hhSRjIKD/uEqur4xcsTdUbBMCz4=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
