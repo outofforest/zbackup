@@ -7,7 +7,7 @@ require (
 	github.com/outofforest/go-zfs/v3 v3.1.12
 	github.com/outofforest/logger v0.3.2
 	github.com/outofforest/parallel v0.2.2
-	github.com/outofforest/run v0.2.9
+	github.com/outofforest/run v0.2.10
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.0
 	golang.org/x/term v0.0.0-20220411215600-e5f449aeb171
@@ -15,7 +15,7 @@ require (
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/outofforest/ioc/v2 v2.5.1 // indirect
+	github.com/outofforest/ioc/v2 v2.5.2 // indirect
 	github.com/outofforest/libexec v0.3.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/ridge/must v0.6.0 // indirect
