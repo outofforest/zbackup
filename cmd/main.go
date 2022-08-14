@@ -5,7 +5,6 @@ import (
 	"crypto"
 	"crypto/rand"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"strings"
 	"syscall"
@@ -79,7 +78,7 @@ func decryptPassword() (string, error) {
 				return "", errors.New("private key stored on YubiKey can't be used for decryption")
 			}
 
-			passEncrypted, err := ioutil.ReadFile(zfsKeyFile)
+			passEncrypted, err := os.ReadFile(zfsKeyFile)
 			if err != nil {
 				return "", errors.WithStack(fmt.Errorf("reading encrypted password failed: %w", err))
 			}
