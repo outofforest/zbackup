@@ -7,7 +7,7 @@ require (
 	github.com/outofforest/go-zfs/v3 v3.1.12
 	github.com/outofforest/logger v0.3.3
 	github.com/outofforest/parallel v0.2.2
-	github.com/outofforest/run v0.2.11
+	github.com/outofforest/run v0.2.12
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.0
 	golang.org/x/term v0.0.0-20220411215600-e5f449aeb171
