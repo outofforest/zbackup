@@ -10,12 +10,12 @@ github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORN
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
-github.com/outofforest/go-zfs/v3 v3.1.12 h1:5k4MNyVS3npILArAgQYZcP2sZ/6M/1lOjezsLrzLDs0=
-github.com/outofforest/go-zfs/v3 v3.1.12/go.mod h1:xQYh0McdPoHUz+zObgL4Tx5qGuz5OSmRFZ2FMEkkn04=
+github.com/outofforest/go-zfs/v3 v3.1.13 h1:B5kYXHc0Ab1GoHwpPhCoUAACAGp6urq2RUaVlrfH0Oc=
+github.com/outofforest/go-zfs/v3 v3.1.13/go.mod h1:DqsRDQoTznNv5MnUW2Bq1wJiuJcgGYogH34Bu214Mmg=
 github.com/outofforest/ioc/v2 v2.5.2 h1:4mNzLuzoZTXL/cO0qf1TrSYvejMgbZz5OUhdLzAUbek=
 github.com/outofforest/ioc/v2 v2.5.2/go.mod h1:yI+FHuHchC/t6nVo3WJ96qEgCXdHQKFI/4wW2/75YcU=
-github.com/outofforest/libexec v0.3.4 h1:WVFNm25n86FMYnaQUMcShC4qFTr6lVdk57KEvijWO8U=
-github.com/outofforest/libexec v0.3.4/go.mod h1:2542oNm/LwFBWoBHSeYa9R6qjmnnwHvqfXZs2Mw/A7g=
+github.com/outofforest/libexec v0.3.5 h1:7VUb+Ws8MwAfC/sW27huHcty9d4fnw96SRJ/z6JHKfc=
+github.com/outofforest/libexec v0.3.5/go.mod h1:mb5LWjLARhAUMA3vHklWWzUmqVa+7b7rs9qQJpneEus=
 github.com/outofforest/logger v0.3.2/go.mod h1:7tZq4O4iqXtj1yhFTt2i2JdXVOG1Oav79Kp1aYDvf8M=
 github.com/outofforest/logger v0.3.3 h1:ijkqF+1tzhwaygYpIZq2Bx+sgUmpghpC7XMrrrMtK7Y=
 github.com/outofforest/logger v0.3.3/go.mod h1:+M5sO17Va9V33t28Qs9VqRQ8bFV501Uhq2PtQY+R3Ms=
