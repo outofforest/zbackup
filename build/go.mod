@@ -3,7 +3,7 @@ module build
 go 1.17
 
 require (
-	github.com/outofforest/build v1.8.18
+	github.com/outofforest/build v1.8.19
 	github.com/outofforest/buildgo v0.5.2
 	github.com/outofforest/libexec v0.3.6
 )
