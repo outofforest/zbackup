@@ -3,7 +3,7 @@ module github.com/outofforest/zbackup
 go 1.19
 
 require (
-	github.com/go-piv/piv-go v1.10.0
+	github.com/go-piv/piv-go v1.11.0
 	github.com/outofforest/go-zfs/v3 v3.1.14
 	github.com/outofforest/logger v0.3.4
 	github.com/outofforest/parallel v0.2.3
