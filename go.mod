@@ -9,7 +9,7 @@ require (
 	github.com/outofforest/parallel v0.2.3
 	github.com/outofforest/run v0.2.15
 	github.com/pkg/errors v0.9.1
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.3
 	golang.org/x/term v0.0.0-20220411215600-e5f449aeb171
 )
 
